@@ -11,10 +11,10 @@
 <?php if(isset($_POST['button'])): ?>
 
 <?php
-$Nenrei=int($_POST['toshi']);
+$Nenrei=int($_GET['toshi']);
 $DanAveJumyo=81;
 $JoAveJumyo=87;
-if($_POST['seibetsu']=='otoko'){
+if($_GET['seibetsu']=='otoko'){
 	$seibetsu="男";
 	$rimit=81-$Nenrei;
 	
@@ -29,7 +29,7 @@ $answer=$rimit*365;
 朝ごはんをおいしく食べられる日数は<br>
 <?php echo $answer+"日です！"; ?>
 <?php else: ?>
-<form action="https://herokuasagohan.herokuapp.com" method="post">
+<form action="https://herokuasagohan.herokuapp.com" method="get">
 	<p>年齢を入力してください：<br>
 	<input type="text" name="toshi" id="toshi"></p><br>
 	<p>性別：<br>
