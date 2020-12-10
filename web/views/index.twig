@@ -12,8 +12,8 @@
 	<p>年齢を入力してください：<br>
 	<input type="text" name="toshi" id="toshi"></p><br>
 	<p>性別：<br>
-	<label><input type="radio" name="otoko" value="男性" id="otoko" >男性</label>
-	<label><input type="radio" name="onna" value="女性" id="onna" >女性</label></p>
+	<label><input type="radio" name="seibetsu" value="otoko" id="seibetsu" >男性</label>
+	<label><input type="radio" name="seibetsu" value="onna" id="seibetsu" >女性</label></p>
 	<p><input type="submit" value="決定"><input type="reset" value="クリア"></p>
 	
 </form>
@@ -23,8 +23,13 @@
 $Nenrei=htmlspecialchars($_POST['toshi']);
 $DanAveJumyo=81;
 $JoAveJumyo=87;
-$Otoko=($_POST['otoko']);
-$Onna=($_POST['Onna']);
+if($_POST['seibetsu']=='otoko'){
+	$seibetsu="男";
+}else{
+	$seibestu="女"
+}
+
+
 
 ?>
 {% endblock %}
