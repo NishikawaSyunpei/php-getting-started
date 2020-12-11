@@ -10,7 +10,7 @@
 $Nenrei=int($_GET['toshi']);
 $DanAveJumyo=81;
 $JoAveJumyo=87;
-<?php if ($_GET['seibetsu']=='otoko') {
+if ($_GET['seibetsu']=='otoko') {
 	$seibetsu="男";
 	$rimit=81-$Nenrei;
 	
