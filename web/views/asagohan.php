@@ -17,7 +17,7 @@ $JoAveJumyo=87;
 }else{
 	$seibestu="女"
 	$rimit=$Nenrei-87;
-
+}
 $answer=$rimit*365;
 
 
