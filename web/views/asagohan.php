@@ -5,6 +5,7 @@
 </head>
 <h1>おいしく朝ごはんを食べれる日数</h1><br><br>
 <body>
+<?php echo $_GET["seibetsu"];?>
 <?php if (isset($_GET['button'])): ?>
 <?php
 $Nenrei=int($_GET['toshi']);
