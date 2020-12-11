@@ -20,10 +20,10 @@ $JoAveJumyo=87;
 
 $answer=$rimit*365;
 
-?>
 
-朝ごはんをおいしく食べられる日数は<br>
-<?php echo $answer+"日です！"; ?>
+echo "朝ごはんをおいしく食べられる日数は\n"
+echo $answer+"日です！"; 
+?>
 <?php else: ?>
 <form action="#" method="get">
 	<p>年齢を入力してください：<br>
