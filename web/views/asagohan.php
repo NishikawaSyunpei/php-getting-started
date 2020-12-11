@@ -6,23 +6,22 @@
 </head>
 <h1>おいしく朝ごはんを食べれる日数</h1><br><br>
 <body>
-<?php if (isset($_GET['決定'])):
-$Nenrei=int($_GET['toshi']);
-$DanAveJumyo=81;
-$JoAveJumyo=87;
-if ($_GET['seibetsu']=='otoko') {
-	$seibetsu="男";
-	$rimit=81-$Nenrei;
+<?php 
+if (isset($_GET['button'])):{
+	$Nenrei=int($_GET['toshi']);
+	$DanAveJumyo=81;
+	$JoAveJumyo=87;
+	if ($_GET['seibetsu']=='otoko') {
+		$rimit=81-$Nenrei;
 	
-}else{
-	$seibetsu="女";
-	$rimit=$Nenrei-87;
+	}else{
+		$rimit=$Nenrei-87;
+	}
+	$answer=$rimit*365;
+	
+	echo "朝ごはんをおいしく食べられる日数は\n";
+	echo $answer+"日です！"; 
 }
-$answer=$rimit*365;
-
-
-echo "朝ごはんをおいしく食べられる日数は\n";
-echo $answer+"日です！"; 
 ?>
 <?php else: ?>
 <form action="#" method="get">
@@ -34,6 +33,6 @@ echo $answer+"日です！";
 	<p><input type="submit" name="button" value="決定"><input type="reset" value="クリア"></p>
 	
 </form>
-<?php endif ; ?>
+<?php endif ;?>
 </body>
 </html>
