@@ -15,13 +15,13 @@ if ($_GET['seibetsu']=='otoko') {
 	$rimit=81-$Nenrei;
 	
 }else{
-	$seibestu="女"
+	$seibestu="女";
 	$rimit=$Nenrei-87;
 }
 $answer=$rimit*365;
 
 
-echo "朝ごはんをおいしく食べられる日数は\n"
+echo "朝ごはんをおいしく食べられる日数は\n";
 echo $answer+"日です！"; 
 ?>
 <?php else: ?>
