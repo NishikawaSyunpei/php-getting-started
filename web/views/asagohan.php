@@ -7,7 +7,7 @@
 <h1>おいしく朝ごはんを食べれる日数</h1><br><br>
 <body>
 <?php 
-if (isset($_GET['button'])):{
+if (isset($_GET['submit'])):{
 	$Nenrei=int($_GET['toshi']);
 	$DanAveJumyo=81;
 	$JoAveJumyo=87;
@@ -30,7 +30,7 @@ if (isset($_GET['button'])):{
 	<p>性別：<br>
 	<label><input type="radio" name="seibetsu" value="otoko" id="seibetsu" >男性</label>
 	<label><input type="radio" name="seibetsu" value="onna" id="seibetsu" >女性</label></p>
-	<p><input type="submit" name="button" value="決定"><input type="reset" value="クリア"></p>
+	<p><input type="submit" name="button" value="submit"><input type="reset" value="クリア"></p>
 	
 </form>
 <?php endif ;?>
