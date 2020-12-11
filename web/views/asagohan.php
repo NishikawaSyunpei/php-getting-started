@@ -5,12 +5,12 @@
 </head>
 <h1>おいしく朝ごはんを食べれる日数</h1><br><br>
 <body>
-<?php if (isset($_POST['button'])): ?>
+<?php if (isset($_GET['button'])): ?>
 <?php
-$Nenrei=int($_POST['toshi']);
+$Nenrei=int($_GET['toshi']);
 $DanAveJumyo=81;
 $JoAveJumyo=87;
-<?php if ($_POST['seibetsu']=='otoko') {
+<?php if ($_GET['seibetsu']=='otoko') {
 	$seibetsu="男";
 	$rimit=81-$Nenrei;
 	
@@ -25,7 +25,7 @@ echo "朝ごはんをおいしく食べられる日数は\n"
 echo $answer+"日です！"; 
 ?>
 <?php else: ?>
-<form action="#" method="post">
+<form action="#" method="get">
 	<p>年齢を入力してください：<br>
 	<input type="text" name="toshi" id="toshi"></p><br>
 	<p>性別：<br>
