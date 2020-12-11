@@ -26,7 +26,7 @@ echo "朝ごはんをおいしく食べられる日数は\n";
 echo $answer+"日です！"; 
 ?>
 <?php else: ?>
-<form action="#" method="get">
+<form action="index.php" method="get">
 	<p>年齢を入力してください：<br>
 	<input type="text" name="toshi" id="toshi"></p><br>
 	<p>性別：<br>
