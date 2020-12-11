@@ -30,7 +30,7 @@ if (isset($_GET['決定'])):{
 	<p>性別：<br>
 	<label><input type="radio" name="seibetsu" value="otoko" id="seibetsu" >男性</label>
 	<label><input type="radio" name="seibetsu" value="onna" id="seibetsu" >女性</label></p>
-	<p><input type="submit" name="button" value="決定"><input type="reset" value="クリア"></p>
+	<p><input type="submit" value="決定"><input type="reset" value="クリア"></p>
 	
 </form>
 <?php endif ;?>
