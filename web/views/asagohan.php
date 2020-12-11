@@ -34,6 +34,6 @@ echo $answer+"日です！";
 	<p><input type="submit" name="button" value="決定"><input type="reset" value="クリア"></p>
 	
 </form>
-<?php endif; ?>
+<?php endif ?>
 </body>
 </html>
