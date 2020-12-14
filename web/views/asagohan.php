@@ -1,6 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>おいしく朝ごはんを食べれる日数</title>
+</head>
+<h1>おいしく朝ごはんを食べれる日数</h1><br><br>
+<body>
 <?php 
 if (isset($_GET['button'])):{
-	$Nenrei=int($_GET['toshi']);
+	$Nenrei=$_GET['toshi'];
 	$DanAveJumyo=81;
 	$JoAveJumyo=87;
 	if ($_GET['seibetsu']=='otoko') {
@@ -15,15 +23,6 @@ if (isset($_GET['button'])):{
 	echo $answer+"日です！"; 
 }
 ?>
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<title>おいしく朝ごはんを食べれる日数</title>
-</head>
-<h1>おいしく朝ごはんを食べれる日数</h1><br><br>
-<body>
-
 <?php else: ?>
 <form action="#" method="get">
 	<p>年齢を入力してください：<br>
