@@ -17,7 +17,7 @@ if (isset($_GET['button'])):{
 	}else if($_GET['seibetsu']=='onna'&& $Nenrei<87){
 		$rimit=87-$Nenrei;
 	}else{
-		echo "朝ごはんをおいしく食べられる日数は今日で最後かもしれません"
+		echo "朝ごはんをおいしく食べられる日数は今日で最後かもしれません";
 	}
 	$answer=$rimit*365;
 	
