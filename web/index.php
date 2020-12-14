@@ -20,7 +20,7 @@ if (isset($_GET['button'])):{
 	$answer=$rimit*365;
 	
 	echo "朝ごはんをおいしく食べられる日数は\n";
-	echo $answer"日です！"; 
+	echo $answer+"日です！"; 
 }
 ?>
 <?php else: ?>
