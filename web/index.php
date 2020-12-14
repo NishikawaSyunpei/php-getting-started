@@ -13,16 +13,18 @@ if (isset($_GET['button'])):{
 	$JoAveJumyo=87;
 	if ($_GET['seibetsu']=='otoko'&& $Nenrei<81) {
 		$rimit=81-$Nenrei;
-	
+		$answer=$rimit*365;
+		echo "朝ごはんをおいしく食べられる日数は\n";
+		echo $answer,"日です！";
+		
 	}else if($_GET['seibetsu']=='onna'&& $Nenrei<87){
 		$rimit=87-$Nenrei;
+		$answer=$rimit*365;
+		echo "朝ごはんをおいしく食べられる日数は\n";
+		echo $answer,"日です！"; 
 	}else{
 		echo "朝ごはんをおいしく食べられる日数は今日で最後かもしれません";
 	}
-	$answer=$rimit*365;
-	
-	echo "朝ごはんをおいしく食べられる日数は\n";
-	echo $answer,"日です！"; 
 }
 ?>
 <?php else: ?>
