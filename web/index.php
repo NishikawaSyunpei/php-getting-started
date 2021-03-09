@@ -8,7 +8,7 @@
 <body>
 <?php
 $year = date("Y");
-$day = day_diff(date('Y')'-01-01', date('Y-m-d'));
+$day = day_diff('2021-01-01', date('Y-m-d'));
 echo $day;
 	
 if (isset($_POST['button'])):{
