@@ -59,6 +59,8 @@ if (isset($_POST['button'])):{
 	}
 }
 ?>
+	<a href="">おいしく昼食を食べられる回数へ</a><br>
+	<a href="">おいしく夕食を食べられる回数へ</a>
 <?php else: ?>
 <form action="#" method="post">
 	<p>年齢を入力してください：<br>
