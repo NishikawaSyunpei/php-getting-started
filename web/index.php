@@ -8,8 +8,8 @@
 <body>
 <?php
 $year = date("Y");
-$time1 = new DateTime();
-$time2 = new DateTime('Y-01-01');
+$time1 = new DateTime('2019-04-01');
+$time2 = new DateTime('2018-02-05');
 
 $diff = $time1->diff($time2);
 echo $diff->format('%y年と%m月と%d日'), PHP_EOL;
