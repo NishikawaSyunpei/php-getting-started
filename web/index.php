@@ -8,19 +8,28 @@
 <body>
 <?php
 $year = date("Y");
-$day = day_diff('2021-01-01', date('Y-m-d'));
-echo .$day.;
-	
+$month=date("m");
+$day=date("d");
+$Mlist=array("0","31","28","31","30","31","30","31","31","30","31","30","31");
+$nissu=0;
+$uru;
+$cnt=0;
+while($cnt<$month){
+	$nissu=$nissu+$Mlist[$cnt];
+	$cnt=$cnt+1;
+}
+$nissu=$nissu+$day;
+echo $nissu;
 if (isset($_POST['button'])):{
 	$Nenrei=$_POST['toshi'];
 	
-	if ($_POST['seibetsu']=='otoko'&& $Nenrei<81) {
+	if ($_POST['seibetsu']=='otoko'&& $Nenrei<79) {
 		$rimit=79-$Nenrei;
 		$answer=$rimit*365;
 		echo "朝ごはんをおいしく食べられる日数は\n";
 		echo $answer,"日です！";
 		
-	}else if($_POST['seibetsu']=='onna'&& $Nenrei<87){
+	}else if($_POST['seibetsu']=='onna'&& $Nenrei<86){
 		$rimit=86-$Nenrei;
 		$answer=$rimit*365;
 		echo "朝ごはんをおいしく食べられる日数は\n";
