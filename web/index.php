@@ -9,7 +9,7 @@
 <?php
 $year = date("Y");
 $time1 = strtotime('now');
-$time2 = strtotime('$year-04-01');
+$time2 = strtotime('$year-01-01');
 echo ($time1 - $time2) / (60 * 60 * 24);
 if (isset($_POST['button'])):{
 	$Nenrei=$_POST['toshi'];
