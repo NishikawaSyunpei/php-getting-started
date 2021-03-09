@@ -12,25 +12,43 @@ $month=date("m");
 $day=date("d");
 $Mlist=array("0","31","28","31","30","31","30","31","31","30","31","30","31");
 $nissu=0;
-$uru;
+$uru=0;
 $cnt=0;
+/*
 while($cnt<$month){
 	$nissu=$nissu+$Mlist[$cnt];
 	$cnt=$cnt+1;
 }
 $nissu=$nissu+$day;
-echo $nissu;
+*/
+	
 if (isset($_POST['button'])):{
 	$Nenrei=$_POST['toshi'];
 	
 	if ($_POST['seibetsu']=='otoko'&& $Nenrei<79) {
 		$rimit=79-$Nenrei;
-		$answer=$rimit*365;
+		if(isset($_POST['urudoshi'])){
+			while($year<$year+$rimit){
+				if ($year % 400 == 0 || ($year % 4 == 0 && $year % 100 != 0)) {
+   					$uru=$uru+1;
+ 				}
+				$year=$year+1;
+			}
+		}
+		$answer=$rimit*365+$uru;
 		echo "朝ごはんをおいしく食べられる日数は\n";
 		echo $answer,"日です！";
 		
 	}else if($_POST['seibetsu']=='onna'&& $Nenrei<86){
 		$rimit=86-$Nenrei;
+		if(isset($_POST['urudoshi'])){
+			while($year<$year+$rimit){
+				if ($year % 400 == 0 || ($year % 4 == 0 && $year % 100 != 0)) {
+   					$uru=$uru+1;
+ 				}
+				$year=$year+1;
+			}
+		}
 		$answer=$rimit*365;
 		echo "朝ごはんをおいしく食べられる日数は\n";
 		echo $answer,"日です！"; 
