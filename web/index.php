@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>おいしく朝ごはんを食べれる日数</title>
 </head>
 <h1>おいしく朝ごはんを食べれる日数</h1><br><br>
