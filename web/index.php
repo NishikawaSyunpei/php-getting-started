@@ -8,19 +8,21 @@
 <body>
 <?php
 $year = date("Y");
-	print_r($year);
+$time1 = strtotime('now');
+$time2 = strtotime('$year-04-01');
+echo ($time1 - $time2) / (60 * 60 * 24);
 if (isset($_POST['button'])):{
 	$Nenrei=$_POST['toshi'];
-	$DanAveJumyo=81;
-	$JoAveJumyo=87;
+	
 	if ($_POST['seibetsu']=='otoko'&& $Nenrei<81) {
-		$rimit=81-$Nenrei;
+		$rimit=79-$Nenrei;
+		for($i=0; $i<$rimit)
 		$answer=$rimit*365;
 		echo "朝ごはんをおいしく食べられる日数は\n";
 		echo $answer,"日です！";
 		
 	}else if($_POST['seibetsu']=='onna'&& $Nenrei<87){
-		$rimit=87-$Nenrei;
+		$rimit=86-$Nenrei;
 		$answer=$rimit*365;
 		echo "朝ごはんをおいしく食べられる日数は\n";
 		echo $answer,"日です！"; 
@@ -37,7 +39,7 @@ if (isset($_POST['button'])):{
 	<label><input type="radio" name="seibetsu" value="otoko" id="seibetsu" >男性</label>
 	<label><input type="radio" name="seibetsu" value="onna" id="seibetsu" >女性</label></p>
 	<p><input type="checkbox" name="urudoshi" value="urudoshi">うるう年を計算する</p>
-	<p><input type="submit" name="button" value="決定">	<input type="reset" value="クリア"></p>
+	<p><input type="submit" name="button" value="計算する">	<input type="reset" value="クリア"></p>
 	
 </form>
 <?php endif ;?>
