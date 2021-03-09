@@ -34,6 +34,7 @@ if (isset($_POST['button'])):{
 	<p>性別：<br>
 	<label><input type="radio" name="seibetsu" value="otoko" id="seibetsu" >男性</label>
 	<label><input type="radio" name="seibetsu" value="onna" id="seibetsu" >女性</label></p>
+	<p><input type="checkbox" name="urudoshi" value="urudoshi">うるう年を計算する</p>
 	<p><input type="submit" name="button" value="決定"><input type="reset" value="クリア"></p>
 	
 </form>
