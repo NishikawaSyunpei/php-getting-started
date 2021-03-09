@@ -8,9 +8,13 @@
 <body>
 <?php
 $year = date("Y");
-$time1 = strtotime('now');
-$time2 = strtotime('2021-01-01');
-echo ($time1 - $time2) / (60 * 60 * 24);
+$time1 = new DateTime('2019-04-01');
+$time2 = new DateTime('2018-02-05');
+
+$diff = $time1->diff($time2);
+echo $diff->format('%y年と%m月と%d日'), PHP_EOL;
+echo $diff->format('総日数は%a日');
+
 if (isset($_POST['button'])):{
 	$Nenrei=$_POST['toshi'];
 	
