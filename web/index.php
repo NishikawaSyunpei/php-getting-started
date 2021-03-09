@@ -8,14 +8,15 @@
 <body>
 <?php
 $year = date("Y");
-
+$time1 = strtotime('2019-04-01');
+$time2 = strtotime('2018-04-01');
+echo ($time1 - $time2) / (60 * 60 * 24);
 
 if (isset($_POST['button'])):{
 	$Nenrei=$_POST['toshi'];
 	
 	if ($_POST['seibetsu']=='otoko'&& $Nenrei<81) {
 		$rimit=79-$Nenrei;
-		for($i=0; $i<$rimit)
 		$answer=$rimit*365;
 		echo "朝ごはんをおいしく食べられる日数は\n";
 		echo $answer,"日です！";
