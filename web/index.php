@@ -37,8 +37,9 @@ if (isset($_POST['button'])):{
 			}
 		}
 		$answer=$rimit*365+$uru;
-		echo "朝ごはんをおいしく食べられる日数は\n";
-		echo $answer,"日です！";
+		echo 'あなたが、残りの人生で、おいしく朝食を食べられる回数は';
+		echo PHP_EOL;
+		echo $answer,'日です'; 
 		
 	}else if($_POST['seibetsu']=='onna'&& $Nenrei<86){
 		$rimit=86-$Nenrei;
@@ -52,10 +53,13 @@ if (isset($_POST['button'])):{
 			}
 		}
 		$answer=$rimit*365;
-		echo 'あなたが、残りの人生で、おいしく朝食を食べられる回数は'."\n";
+		echo 'あなたが、残りの人生で、おいしく朝食を食べられる回数は';
+		echo PHP_EOL;
 		echo $answer,'日です'; 
 	}else{
-		echo 'あなたが、残りの人生で、おいしく朝食を食べられる回数は."\n"今日で最後かもしれません';
+		echo 'あなたが、残りの人生で、おいしく朝食を食べられる回数は'
+		echo PHP_EOL;
+		echo '今日で最後かもしれません';
 	}
 }
 ?>
