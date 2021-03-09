@@ -9,7 +9,7 @@
 <?php
 $year = date("Y");
 $day = day_diff('2021-01-01', date('Y-m-d'));
-echo $day;
+echo .$day.;
 	
 if (isset($_POST['button'])):{
 	$Nenrei=$_POST['toshi'];
