@@ -28,11 +28,12 @@ if (isset($_POST['button'])):{
 	if ($_POST['seibetsu']=='otoko'&& $Nenrei<79) {
 		$rimit=79-$Nenrei;
 		if(isset($_POST['urudoshi'])){
-			while($year<$year+$rimit){
+			while($cnt<$rimit){
 				if ($year % 400 == 0 || ($year % 4 == 0 && $year % 100 != 0)) {
    					$uru=$uru+1;
  				}
 				$year=$year+1;
+				$cnt=$cnt+1;
 			}
 		}
 		$answer=$rimit*365+$uru;
@@ -42,11 +43,12 @@ if (isset($_POST['button'])):{
 	}else if($_POST['seibetsu']=='onna'&& $Nenrei<86){
 		$rimit=86-$Nenrei;
 		if(isset($_POST['urudoshi'])){
-			while($year<$year+$rimit){
+			while($cnt<$rimit){
 				if ($year % 400 == 0 || ($year % 4 == 0 && $year % 100 != 0)) {
    					$uru=$uru+1;
  				}
 				$year=$year+1;
+				$cnt=$cnt+1;
 			}
 		}
 		$answer=$rimit*365;
