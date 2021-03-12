@@ -64,7 +64,7 @@ if (isset($_POST['button'])):{
 	}
 }
 ?>
-	<br><br>次回の朝ごはんにいかがでしょうか<br>
+	<br><br>次回の朝ごはんにいかがでしょうか<br><br>
 	<div class="iframe-wrapper">
 	<iframe src="https://www.youtube.com/embed/_8FvxnLXTFY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
