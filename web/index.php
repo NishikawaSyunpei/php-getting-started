@@ -66,9 +66,9 @@ if (isset($_POST['button'])):{
 ?>
 	<br><br>次回の朝ごはんにいかがでしょうか<br>
 	<div class="iframeWrapper">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/_8FvxnLXTFY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-	<br><br><br><br><a href="">おいしく昼食を食べられる回数へ</a><br><br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/_8FvxnLXTFY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<br><br><a href="">おいしく昼食を食べられる回数へ</a><br><br>
 	<a href="">おいしく夕食を食べられる回数へ</a>
 	
 <?php else: ?>
